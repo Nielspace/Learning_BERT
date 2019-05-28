@@ -7,7 +7,7 @@ More intuitively targeted for my own learning and improvement, I am have been lo
 
 Technologies like BERT that stands for Bidirectional Encoder Representations from Transformers from Google is one of the state of the art pre-training model. 
 
-For more information please visit : <a href = "https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html"> this page <a> and learn more about it. 
+For more information please visit : <a href = "https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html" target= "_blank"> this page <a> and learn more about it. 
   
 I will be using different technologies most likely python to build this project. 
 
