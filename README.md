@@ -16,7 +16,7 @@ You are most welcome to pull and edit this project.
 <h1> Index </h1>
 
 <ol>
-  <li>Introduction</li>
+  <li><a href="https://github.com/Nielspace/Learning_BERT/blob/master/Introduction.ipynb"> Introduction </a></li>
   <li> What is Transfer Learning? </li>
   <li> Using trained model</li>
   <li> Project still in progress</li>
