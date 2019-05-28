@@ -1,0 +1,30 @@
+# Introduction
+
+BERT Stands for Bidirectional Encoder Representations from Transformer. 
+
+NLP or Natural Language Processing is a diverse platform where to train a model a large quantity of data is required. With Modern day advancement in AI, requirements of more data is mandatory. And NLP is not any different. To shorten the gap Google has introduced a new state of the art pertaining for NLP. With this we can train our model in less than 30 minutes or few hours as told by Google in their paper.
+
+BERT builds upon recent work in pre-training contextual representations — including Semi-supervised Sequence Learning, Generative Pre-Training, ELMo, and ULMFit. However, unlike these previous models, BERT is the first deeply bidirectional, unsupervised language representation, pre-trained using only a plain text corpus. 
+
+There are two types of pre-trained models:
+* Context-free
+* Contextual representations 
+
+Context-free:
+Context-free models such as word2vec or GloVe generate a single word embedding representation for each word in the vocabulary. For example “Apple” can be a fruit or can be a company. 
+
+Contextual representations:
+Contextual representations can generate a representation of each word that is based on the other words in the sentence. For example “I ate an apple and a banana” . In this case a unidirectional contextual model would represent “apple” based on "I ate an “ but not “and a banana” . But BERT, however, uses both its previous and next context — starting from the very bottom of a deep neural network, making it deeply bidirectional.
+
+
+The Strength of Bidirectionality
+To understand why, consider that unidirectional models are efficiently trained by predicting each word conditioned on the previous words in the sentence. However, it is not possible to train bidirectional models by simply conditioning each word on its previous and next words, since this would allow the word that’s being predicted to indirectly “see itself” in a multi-layer model. 
+
+
+To solve this problem, we use the straightforward technique of masking out some of the words in the input and then condition each word bidirectionally to predict the masked words. For example 
+   <b>A man went to the [Mask1. He bought the [Mask2].</b>
+   <b>Mask1 = Shop | Mask2 = Milk</b>
+While this idea has been around for a very long time, BERT is the first time it was successfully used to pre-train a deep neural network.
+
+
+BERT also learns to model relationships between sentences by pre-training on a very simple task that can be generated from any text corpus: Given two sentences A and B, is B the actual next sentence that comes after A in the corpus, or just a random sentence? For example:
